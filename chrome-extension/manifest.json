@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+
+  "permissions": [
+    "http://s3.radioheart.ru:8015/",
+    "http://ws.audioscrobbler.com/",
+    "tabs"
+  ],
+
+  "name": "Metal Radio",
+  "description": "Extension with possibility to listen metal oriented online radio stations.",
+  "background": {"page": "background.html"},
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "images/icon_128.png",
+    "16": "images/icon.png",
+    "48": "images/icon_48.png"
+  },
+  "minimum_chrome_version": "26.0",
+  "options_page": "options.html"
+}
