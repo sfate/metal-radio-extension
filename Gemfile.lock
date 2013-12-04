@@ -16,7 +16,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.12.2)
+  compass
   json (~> 1.7.7)
   rake (~> 10.0.4)
   saas (~> 0.1.1)

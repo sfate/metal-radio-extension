@@ -1,9 +1,12 @@
 @import 'base';
 @import "compass/css3/images";
+@import "compass/css3/box-shadow";
+@import "compass/css3/font-face";
+
+@include font-face("Garage Font", font-files("/fonts/vtks.ttf"));
 
 body {
-  @include background(url(/images/logo.png),
-                      linear-gradient(top, rgba(69,72,77,1) 0%,rgba(55,0,0,1) 100%));
+  @include background(url(/images/logo.png), #330000);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -11,10 +14,18 @@ body {
   height: 450px;
 }
 
+#title {
+  text-align: center;
+  color: #202020;
+  font-family: "Garage Font";
+  font-size: 20px;
+}
+
 #player, #playlist {
-  background: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   height: 200px;
-  width: 400px;
+  width: 580px;
   margin: 10px auto 0;
+  background: rgba(20, 20, 20, 0.6);
+  @include box-shadow(rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset);
 }

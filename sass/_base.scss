@@ -2,11 +2,11 @@
 @import "compass/css3/user-interface";
 
 body {
-  background: #313131;
   color: #ffffff;
   font: 12px/20px "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   @include user-select(none);
+  margin: 10px;
 }
 
 hr {
