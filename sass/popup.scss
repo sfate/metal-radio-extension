@@ -2,8 +2,10 @@
 @import "compass/css3/images";
 @import "compass/css3/box-shadow";
 @import "compass/css3/font-face";
+@import "compass/css3/text-shadow";
 
-@include font-face("Garage Font", font-files("/fonts/vtks.ttf"));
+@include font-face("leckerli", font-files("/fonts/leckerli.otf"));
+@include font-face("tkachenko", font-files("/fonts/tkachenko.otf"));
 
 body {
   @include background(url(/images/logo.png), #330000);
@@ -11,14 +13,16 @@ body {
   background-attachment: fixed;
   background-position: center;
   width: 600px;
-  height: 450px;
+  height: 500px;
 }
 
 #title {
   text-align: center;
-  color: #202020;
-  font-family: "Garage Font";
-  font-size: 20px;
+  color: #000000;
+  font-family: leckerli;
+  font-size: 40px;
+  line-height: 40px;
+  @include text-shadow(rgba(255, 255, 255, 0.1) 1px 1px 0);
 }
 
 #player, #playlist {

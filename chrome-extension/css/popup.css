@@ -91,29 +91,36 @@ hr {
 }
 
 @font-face {
-  font-family: "Garage Font";
-  src: url(/fonts/vtks.ttf) format('truetype');
+  font-family: "leckerli";
+  src: url(/fonts/leckerli.otf) format('opentype');
 }
 
-/* line 8, ../../sass/popup.scss */
+@font-face {
+  font-family: "tkachenko";
+  src: url(/fonts/tkachenko.otf) format('opentype');
+}
+
+/* line 10, ../../sass/popup.scss */
 body {
   background: url(/images/logo.png), #330000;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   width: 600px;
-  height: 450px;
+  height: 500px;
 }
 
-/* line 17, ../../sass/popup.scss */
+/* line 19, ../../sass/popup.scss */
 #title {
   text-align: center;
-  color: #202020;
-  font-family: "Garage Font";
-  font-size: 20px;
+  color: #000000;
+  font-family: leckerli;
+  font-size: 40px;
+  line-height: 40px;
+  text-shadow: rgba(255, 255, 255, 0.1) 1px 1px 0;
 }
 
-/* line 24, ../../sass/popup.scss */
+/* line 28, ../../sass/popup.scss */
 #player, #playlist {
   border-radius: 5px;
   height: 200px;
