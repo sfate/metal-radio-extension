@@ -1,28 +1,9 @@
 @import 'base';
-@import "compass/css3/images";
 @import "compass/css3/box-shadow";
-@import "compass/css3/font-face";
-@import "compass/css3/text-shadow";
-
-@include font-face("leckerli", font-files("/fonts/leckerli.otf"));
-@include font-face("tkachenko", font-files("/fonts/tkachenko.otf"));
 
 body {
-  @include background(url(/images/logo.png), #330000);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   width: 600px;
   height: 500px;
-}
-
-#title {
-  text-align: center;
-  color: #000000;
-  font-family: leckerli;
-  font-size: 40px;
-  line-height: 40px;
-  @include text-shadow(rgba(255, 255, 255, 0.1) 1px 1px 0);
 }
 
 #player, #playlist {
@@ -32,4 +13,9 @@ body {
   margin: 10px auto 0;
   background: rgba(20, 20, 20, 0.6);
   @include box-shadow(rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset);
+}
+
+#playlist {
+  max-height: 200px;
+  overflow-y: scroll;
 }

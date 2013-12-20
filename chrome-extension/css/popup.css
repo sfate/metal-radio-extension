@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,74 +20,47 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../.rvm/gems/ruby-1.9.3-head@metal_radio_chrome/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/local/rvm/gems/ruby-2.0.0-p0@metal-radio/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
-}
-
-/* line 4, ../../sass/_base.scss */
-body {
-  color: #ffffff;
-  font: 12px/20px "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  margin: 10px;
-}
-
-/* line 12, ../../sass/_base.scss */
-hr {
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* line 18, ../../sass/_base.scss */
-.logo {
-  text-align: center;
-}
-/* line 20, ../../sass/_base.scss */
-.logo > img {
-  max-width: 220px;
 }
 
 @font-face {
@@ -95,32 +68,66 @@ hr {
   src: url(/fonts/leckerli.otf) format('opentype');
 }
 
-@font-face {
-  font-family: "tkachenko";
-  src: url(/fonts/tkachenko.otf) format('opentype');
-}
-
-/* line 10, ../../sass/popup.scss */
+/* line 9, ../../sass/_base.scss */
 body {
-  background: url(/images/logo.png), #330000;
+  background: url(/images/logo.png), #500000;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  width: 600px;
-  height: 500px;
+  margin: 10px;
+  color: #000000;
+  font: 12px/20px "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
-/* line 19, ../../sass/popup.scss */
+/* line 21, ../../sass/_base.scss */
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 27, ../../sass/_base.scss */
 #title {
   text-align: center;
-  color: #000000;
   font-family: leckerli;
   font-size: 40px;
   line-height: 40px;
   text-shadow: rgba(255, 255, 255, 0.1) 1px 1px 0;
 }
 
-/* line 28, ../../sass/popup.scss */
+/* line 35, ../../sass/_base.scss */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* line 38, ../../sass/_base.scss */
+::-webkit-scrollbar-track {
+  background-color: rgba(30, 30, 30, 0.3);
+  border-left: 1px solid #111;
+}
+
+/* line 42, ../../sass/_base.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+}
+
+/* line 46, ../../sass/_base.scss */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+/* line 4, ../../sass/popup.scss */
+body {
+  width: 600px;
+  height: 500px;
+}
+
+/* line 9, ../../sass/popup.scss */
 #player, #playlist {
   border-radius: 5px;
   height: 200px;
@@ -130,4 +137,10 @@ body {
   -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+}
+
+/* line 18, ../../sass/popup.scss */
+#playlist {
+  max-height: 200px;
+  overflow-y: scroll;
 }
