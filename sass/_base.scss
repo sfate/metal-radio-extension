@@ -7,7 +7,7 @@
 @include font-face("leckerli", font-files("/fonts/leckerli.otf"));
 
 body {
-  @include background(url(/images/logo.png), #500000);
+  @include background(url(/images/logo.png), #5a0000);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -16,6 +16,7 @@ body {
   font: 12px/20px "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   @include user-select(none);
+  overflow: hidden;
 }
 
 hr {
