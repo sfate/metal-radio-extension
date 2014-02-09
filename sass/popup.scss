@@ -1,5 +1,19 @@
 @import 'base';
 @import "compass/css3/box-shadow";
+@import "compass/css3/transition";
+@import "compass/css3/box-sizing";
+
+@include font-face("leckerli", font-files("/fonts/leckerli.otf"));
+@font-face {
+  font-family: 'fontello';
+  src: url('/fonts/fontello.eot');
+  src: url('/fonts/fontello.eot#iefix') format('embedded-opentype'),
+       url('/fonts/fontello.woff') format('woff'),
+       url('/fonts/fontello.ttf') format('truetype'),
+       url('/fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   width: 600px;
@@ -7,10 +21,109 @@ body {
 }
 
 #player, #playlist {
-  height: 200px;
+  font-family: 'Raleway', sans-serif;
   width: 580px;
   margin: 10px auto 0;
 }
+
+#player {
+  height: 165px;
+  #cover {
+    background: url(/images/no-cover.png) 50% 50% no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+    @include transition(all 0.3s ease);
+  }
+  #visualization {
+    float: right;
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    canvas {
+      width: 150px;
+      height: 100px;
+      border-radius: 5px;
+      @include box-shadow(#000 0 0 5px);
+    }
+  }
+  #artist, #song, #station {
+    position: fixed;
+    left: 130px;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 5px;
+    clear: both;
+    .title {
+      float: left;
+      text-decoration: underline;
+    }
+    .content {
+      float: right;
+      width: 220px;
+      max-width: 220px;
+      padding: 0 5px;
+    }
+  }
+  #artist {
+    margin-top: 0;
+    top: 65px;
+  }
+  #song {
+    top: 95px;
+  }
+  #station {
+    top: 130px;
+  }
+  #onair {
+    clear: both;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    padding: 0 5px;
+    // background: rgba(0, 0, 0, 0.7);
+    background: #fff;
+    font-weight: bold;
+    @include transition(all 0.3s ease);
+    @include box-shadow(rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 0px 10px 0px inset);
+  }
+
+  #buttons {
+    position: fixed;
+    top: 180px;
+    left: 25px;
+    width: 570px;
+    overflow: hidden;
+    outline: none;
+    a {
+      @include background(linear-gradient(to right, rgba(224, 224, 224, 0.4) 0%, rgba(135, 135, 135, 0.4) 100%));
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      margin: 0 1px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.4);
+      font-family: 'fontello';
+      font-size: 30px;
+      line-height: 40px;
+      text-shadow: 1px 1px 0 #FFF;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(155, 155, 155, 0.5);
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    #play, #stop, #vkontakte, #lastfm {
+      float: left;
+    }
+    #list, #settings {
+      float: right;
+    }
+  } /* #buttons */
+} /* #player */
 
 .rounded {
   border-radius: 5px;
@@ -20,5 +133,6 @@ body {
 
 #playlist {
   max-height: 200px;
+  height: 200px;
   overflow-y: scroll;
 }

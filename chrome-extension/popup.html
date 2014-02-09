@@ -3,27 +3,35 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>Metal Radio Online</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/popup.css" type="text/css" media="screen" charset="utf-8">
+  <script type="text/javascript" charset="utf-8" src='js/visualization.js'></script>
+  <script type="text/javascript" charset="utf-8" src='js/popup.js'></script>
 </head>
 <body>
   <div id='title'>Metal Radio</div>
   <div id='player'>
     <div id="info">
-      <div id="onair"> </div>
-      <div id="cover"> </div>
-      <div id="artist"> </div>
-      <div id="song"> </div>
-      <div id="station"> </div>
+      <div id="cover" class='rounded'></div>
+      <div id="visualization"><canvas></canvas></div>
+      <div id="artist">
+        <div class='title'>ARTIST:</div><div class='content rounded'>NAME</div>
+      </div>
+      <div id="song">
+        <div class='title'>SONG:</div><div class='content rounded'>NAME</div>
+      </div>
+      <div id="station">
+        <div class='title'>STATION:</div><div class='content rounded'>NAME</div>
+      </div>
+      <div id="onair">ON AIR</div>
     </div>
-    <div id="visualization"> </div>
-    <div id="controls">
-      <ul>
-        <li class='btn' id='play'> </li>
-        <li class='btn' id='stop'> </li>
-        <li class='btn' id='vkontakte'> </li>
-        <li class='btn' id='lastfm'> </li>
-        <li class='btn' id='list'> </li>
-      </ul>
+    <div id='buttons'>
+      <a class='btn' id='play'>2</a>
+      <a class='btn' id='stop'>1</a>
+      <a class='btn' id='vkontakte'>3</a>
+      <a class='btn' id='lastfm'>4</a>
+      <a class='btn' id='list'>5</a>
+      <a class='btn' id='settings'>6</a>
     </div>
   </div>
   <div id='playlist' class='rounded'></div>
