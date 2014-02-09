@@ -3,6 +3,8 @@ trap("INT") { puts "\nCatched ^-C signal. Quiting..."; exit(0) }
 namespace :extension do
   desc 'Build complete chrome-extension.'
   task :build do
+    %x[compass compile -c compass_config.rb]
+    %x[zip -r 'metal-radio.zip' 'chrome-extension']
   end
   task :clear do
     %x[compass clean]
